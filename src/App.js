@@ -37,7 +37,7 @@ function App() {
   for (let i = 0; i < plasmid_json_array.features.length; i++) {
     var feat = plasmid_json_array.features[i];
     var feat_name = feat.name.toLowerCase();
-    if ((feat_name == "synthetic dna construct" || feat_name == "recombinant plasmid") && plasmid_length == feat.end - feat.start + 1) {
+    if ((feat_name === "synthetic dna construct" || feat_name === "recombinant plasmid") && plasmid_length === feat.end - feat.start + 1) {
       delete plasmid_json_array.features[i];
     }
   }
