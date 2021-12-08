@@ -46,6 +46,11 @@ function App() {
     updateEditor(store, "DemoEditor", {
       sequenceData: plasmid_json_array,
       circular: plasmid_json_array.circular,
+      annotationVisibility: {
+        features: true,
+        cutsites: false,
+        primers: false
+      }
     });
   });
   const editorProps = {
