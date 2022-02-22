@@ -8,7 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bio-parsers": "^8.3.20",
-    "open-vector-editor": "^17.0.4",
+    "open-vector-editor": "^17.2.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
