@@ -8229,10 +8229,10 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-open-vector-editor@^17.4.6:
-  version "17.4.6"
-  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-17.4.6.tgz#e0a7ab122efb8b67b1777b276ecd02796a0ec9ed"
-  integrity sha512-FchIJzgENTWeX8GnZpPQrounC+yoVQzLEAaS5v76lXrWgxpdtMoLj8d29zhfgmNgo15G1oc0GJ+1NmMOk9phhA==
+open-vector-editor@^17.5.4:
+  version "17.5.4"
+  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-17.5.4.tgz#f3bbc67843e04c3cee52e597571a22abc0e38f06"
+  integrity sha512-nSgV8w1mJSiX6NOB37usqOBGlX6kTrBApvXrvqfoeATmGDWlvRNgSjOg2r/uZnKSkcgZ8hPBoVHuZqir3k2D2Q==
   dependencies:
     "@blueprintjs/core" "3.52.0"
     "@blueprintjs/datetime" "3.23.19"
