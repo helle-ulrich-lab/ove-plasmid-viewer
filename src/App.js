@@ -1,22 +1,27 @@
 import React from "react";
 import { Editor, updateEditor } from "open-vector-editor";
 import store from "./store";
-import { genbankToJson } from 'bio-parsers';
+import { genbankToJson, snapgeneToJson, anyToJson } from 'bio-parsers';
 
 import "./App.css";
 
-async function AsyncGetGenBankFileAsOveJson(file_name) {
+async function convertPlasmiMapToOveJson(fileName) {
   let data = await fetch(
-    new Request("/uploads/" + file_name, {
+    new Request(fileName, {
       //probably don't need this header.. fetch should just work
       headers: { "X-Requested-With": "XMLHttpRequest" }
     })
-  )
-    .then((response) => response.text())
-    .then((text) => genbankToJson(text)[0]["parsedSequence"])
+  ) 
+    .then((response) => {
+      let fileFormat = fileName.split('.').pop().toLowerCase();
+      if (fileFormat === 'gbk') return response.text();
+      else if (fileFormat === 'dna') return response.blob();
+    }
+    )
+    .then((plasmidData) => anyToJson(plasmidData, {fileName})) //[0]["parsedSequence"])
     .catch(console.error);
-  // console.log(`data:`, data); //is this defined and working?
-  return data;
+  console.log(`data:`, data); //is this defined and working?
+  return data[0]['parsedSequence'];
 }
 
 function App() {
@@ -30,7 +35,7 @@ function App() {
     //useEffect doesn't like top level async functions so we define one inline and immediately invoke it
     (async () => {
       // Get plasmid as OVE JSON
-      const seqData = await AsyncGetGenBankFileAsOveJson(fileName);
+      const seqData = await convertPlasmiMapToOveJson(fileName);
       seqData.name = title;
       const plasmid_length = seqData.size;
 
