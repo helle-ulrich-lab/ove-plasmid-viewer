@@ -20,7 +20,7 @@ async function convertPlasmiMapToOveJson(fileName) {
     )
     .then((plasmidData) => anyToJson(plasmidData, {fileName})) //[0]["parsedSequence"])
     .catch(console.error);
-  console.log(`data:`, data); //is this defined and working?
+  // console.log(`data:`, data); //is this defined and working?
   return data[0]['parsedSequence'];
 }
 
