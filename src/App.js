@@ -1,7 +1,7 @@
 import React from "react";
 import { Editor, updateEditor } from "open-vector-editor";
 import store from "./store";
-import { genbankToJson, snapgeneToJson, anyToJson } from 'bio-parsers';
+import { anyToJson } from 'bio-parsers';
 
 import "./App.css";
 
