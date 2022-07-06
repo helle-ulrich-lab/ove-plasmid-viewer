@@ -1192,7 +1192,7 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.3.tgz#555193ab2e3bb3b6adc3d551c9c030d9e860daf6"
   integrity sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==
 
-"@gmod/gff@^1.1.2":
+"@gmod/gff@^1.1.2", "@gmod/gff@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@gmod/gff/-/gff-1.2.1.tgz#4d1e3694f2268215aa6c7bad366be84a1449034d"
   integrity sha512-YUqPOfoaSfVVXs3Unwph4Ap3NxQIghNtNm+57DEhf+cMeUloFU6v44dKwSUcZZ+PBgAop1BD11QUVSVzmSqNgQ==
@@ -2113,6 +2113,18 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
+"@use-gesture/core@10.2.16":
+  version "10.2.16"
+  resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.16.tgz#6c8db02955dca405b2544bf78f3ba1f094b6a551"
+  integrity sha512-2J2GICmrSA6RwcowqzL0TY6S8bJY35KhLnE0YjBIVobQL2RilSDefXTKMxxyontp2mALDeeYAHh9ZLu+vMaq8Q==
+
+"@use-gesture/react@^10.2.15":
+  version "10.2.16"
+  resolved "https://registry.yarnpkg.com/@use-gesture/react/-/react-10.2.16.tgz#467b4001c335905d35324ee147a2bb93b4f908e2"
+  integrity sha512-kkWi97SHzj/F6XqRXSyrk5pLoSiuRgqvnQl2Bawmf05dWo2q6DL7v5LhnnyPNZRVkCm+WEb3e1nsR+iVza1vmg==
+  dependencies:
+    "@use-gesture/core" "10.2.16"
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -2945,6 +2957,22 @@ bio-parsers@^8.3.26:
     validate.io-nonnegative-integer-array "^1.0.1"
     xml2js "^0.4.15"
 
+bio-parsers@^8.3.27:
+  version "8.3.27"
+  resolved "https://registry.yarnpkg.com/bio-parsers/-/bio-parsers-8.3.27.tgz#d7b22fc488354a04934aa828412ad5d50d349141"
+  integrity sha512-mXXjO84VcqgqIa/g4IDykrXm3mKAAw6zLx+7T9mneO6IjBv9BEs19JgZ7r9gInzzXCPv6/WAoiCCadsZE9dhqg==
+  dependencies:
+    "@gmod/gff" "^1.2.1"
+    buffer "^6.0.3"
+    bufferpack "^0.0.6"
+    color "^4.2.3"
+    flatmap "0.0.3"
+    lodash "^4.17.21"
+    safe-access "^0.1.0"
+    string_decoder "^1.3.0"
+    validate.io-nonnegative-integer-array "^1.0.1"
+    xml2js "^0.4.23"
+
 bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
@@ -3572,6 +3600,14 @@ color-string@^1.6.0:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
+color-string@^1.9.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/color-string/-/color-string-1.9.1.tgz#4467f9146f036f855b764dfb5bf8582bf342c7a4"
+  integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
 color@^3.0.0, color@^3.1.2, color@^3.1.3:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/color/-/color-3.2.1.tgz#3544dc198caf4490c3ecc9a790b54fe9ff45e164"
@@ -3579,6 +3615,14 @@ color@^3.0.0, color@^3.1.2, color@^3.1.3:
   dependencies:
     color-convert "^1.9.3"
     color-string "^1.6.0"
+
+color@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/color/-/color-4.2.3.tgz#d781ecb5e57224ee43ea9627560107c0e0c6463a"
+  integrity sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==
+  dependencies:
+    color-convert "^2.0.1"
+    color-string "^1.9.0"
 
 combined-stream@^1.0.8:
   version "1.0.8"
@@ -6419,7 +6463,7 @@ is-hexadecimal@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
   integrity sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==
 
-is-mobile@^3.0.0:
+is-mobile@^3.0.0, is-mobile@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/is-mobile/-/is-mobile-3.1.1.tgz#3b9e48f40068e4ea2da411f5009779844ce8d6aa"
   integrity sha512-RRoXXR2HNFxNkUnxtaBdGBXtFlUMFa06S0NUKf/LCF+MuGLu13gi9iBCkoEmc6+rpXuwi5Mso5V8Zf7mNynMBQ==
@@ -8229,10 +8273,10 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-open-vector-editor@^17.5.4:
-  version "17.5.4"
-  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-17.5.4.tgz#f3bbc67843e04c3cee52e597571a22abc0e38f06"
-  integrity sha512-nSgV8w1mJSiX6NOB37usqOBGlX6kTrBApvXrvqfoeATmGDWlvRNgSjOg2r/uZnKSkcgZ8hPBoVHuZqir3k2D2Q==
+open-vector-editor@^17.7.10:
+  version "17.7.10"
+  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-17.7.10.tgz#3e72a714d95988af7da60978088a510c10cb9a4d"
+  integrity sha512-DhXDVM9ARz0tY1cC91PPTr6aY05I8YmjGi30Mnf2hOgJB61admxonaJrw9RFFQZ1yfAjF1ywnbdyypGG1S8zkg==
   dependencies:
     "@blueprintjs/core" "3.52.0"
     "@blueprintjs/datetime" "3.23.19"
@@ -8240,7 +8284,8 @@ open-vector-editor@^17.5.4:
     "@fontsource/ubuntu-mono" "^4.5.0"
     "@risingstack/react-easy-state" "^6.3.0"
     "@teselagen/react-list" "^0.8.18"
-    bio-parsers "^8.3.26"
+    "@use-gesture/react" "^10.2.15"
+    bio-parsers "^8.3.27"
     classnames "^2.3.1"
     clipboard "2.0.8"
     color "^3.1.3"
@@ -8250,12 +8295,12 @@ open-vector-editor@^17.5.4:
     downloadjs "^1.4.7"
     file-saver "^2.0.5"
     html2canvas "^1.4.1"
-    is-mobile "^3.0.0"
+    is-mobile "^3.1.1"
     node-interval-tree "^1.3.3"
     paths-js "^0.4.11"
     pluralize "^7.0.0"
     popper.js "^1.16.1"
-    prop-types "^15.7.2"
+    prop-types "^15.8.1"
     react-beautiful-dnd "^13.1.0"
     react-draggable "4.4.4"
     react-dropzone "^11.4.2"
@@ -8271,11 +8316,11 @@ open-vector-editor@^17.5.4:
     redux-thunk "2.4.1"
     reselect "^4.0.0"
     shortid "^2.2.16"
-    teselagen-react-components "30.7.9"
+    teselagen-react-components "30.7.24"
     tg-use-local-storage-state "^16.0.1"
     use-local-storage-state "^13.0.0"
     ve-range-utils "^2.6.5"
-    ve-sequence-utils "^5.1.14"
+    ve-sequence-utils "^5.1.22"
 
 open@^7.0.2:
   version "7.4.2"
@@ -11106,7 +11151,7 @@ string.prototype.trimstart@^1.0.4:
     call-bind "^1.0.2"
     define-properties "^1.1.3"
 
-string_decoder@^1.0.0, string_decoder@^1.1.1, string_decoder@^1.2.0:
+string_decoder@^1.0.0, string_decoder@^1.1.1, string_decoder@^1.2.0, string_decoder@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
   integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
@@ -11388,10 +11433,10 @@ terser@^5.3.4:
     source-map "~0.7.2"
     source-map-support "~0.5.20"
 
-teselagen-react-components@30.7.9:
-  version "30.7.9"
-  resolved "https://registry.yarnpkg.com/teselagen-react-components/-/teselagen-react-components-30.7.9.tgz#b539f0418da9fe13600475e08fb88c1b91ac2da3"
-  integrity sha512-y1wPwlPCv2/KMyO6YmaVtsP4kX3NWASafCYtSR+PdG/gHfw7n8nfv/yosXl0a7hKZ9HLkzq2f5dNiUewFcQ4eA==
+teselagen-react-components@30.7.24:
+  version "30.7.24"
+  resolved "https://registry.yarnpkg.com/teselagen-react-components/-/teselagen-react-components-30.7.24.tgz#2d84d4041e67e8644633f068032165f01e914f9f"
+  integrity sha512-1NQsKDnxnJupaGCnR5dfToLz0ub6Ig3IhmauvAzxC5YTqHxFrOH3xpGJs8x/Lc+0Clfr2C7i4hIEEbAkN/kOlA==
   dependencies:
     "@blueprintjs/core" "3.52.0"
     "@blueprintjs/datetime" "3.23.19"
@@ -12093,10 +12138,10 @@ ve-range-utils@^2.6.5:
   dependencies:
     lodash "^4.17.4"
 
-ve-sequence-utils@^5.1.14:
-  version "5.1.14"
-  resolved "https://registry.yarnpkg.com/ve-sequence-utils/-/ve-sequence-utils-5.1.14.tgz#fc57f50dc684b282e96acdcda713f70247febe91"
-  integrity sha512-pw2AyqHMOLteYrpk32Y6EIiQqZcdH2aKEJwtwc/qaNE6scuWYrkYboKsfazIDgnWT9xUjH9q338WBqJKhtUH3A==
+ve-sequence-utils@^5.1.22:
+  version "5.1.22"
+  resolved "https://registry.yarnpkg.com/ve-sequence-utils/-/ve-sequence-utils-5.1.22.tgz#91022e414d8ad67924c597c24a8879a4bc256a00"
+  integrity sha512-dewkxxIhVl/bR0AeVSlA2qO6lKRIEzjjNjfkfJOPmNdrwtKO+y6pbfN+L1RuLAq0sdn7yxdImFWvukzybQXT+Q==
   dependencies:
     bson-objectid "^1.1.1"
     escape-string-regexp "^1.0.5"
@@ -12600,7 +12645,7 @@ xml-name-validator@^3.0.0:
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
   integrity sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==
 
-xml2js@^0.4.15:
+xml2js@^0.4.15, xml2js@^0.4.23:
   version "0.4.23"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
   integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
