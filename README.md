@@ -1,7 +1,7 @@
 
 # Plasmid viewer for the lab database of the Ulrich lab @ IMB Mainz
 
-This project is forked from <https://github.com/tnrich/ove-react-demo-repo>. It has been modified from this original project to meet the needs of the lab database that the Ulrich lab @ IMB Mainz uses to manage their biological/ordering record (<https://github.com/helle-ulrich-lab/organisation-intranet>).
+This project is forked from <https://github.com/tnrich/ove-react-demo-repo> to implement changes that meet the needs of the lab database of the Ulrich lab @ IMB Mainz (<https://github.com/helle-ulrich-lab/organisation-intranet>).
 
 # Available Scripts
 
