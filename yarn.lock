@@ -1042,6 +1042,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.18.9":
+  version "7.19.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.0.tgz#22b11c037b094d27a8a2504ea4dcff00f50e2259"
+  integrity sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.16.7.tgz#8d126c8701fde4d66b264b3eba3d96f07666d155"
@@ -1265,6 +1272,19 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
+
+"@hello-pangea/dnd@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/@hello-pangea/dnd/-/dnd-16.0.0.tgz#b97791286395924ffbdb4cd0f27f06f2985766d5"
+  integrity sha512-FprEzwrGMvyclVf8pWTrPbUV7/ZFt6NmL76ePj1mMyZG195htDUkmvET6CBwKJTXmV+AE/GyK4Lv3wpCqrlY/g==
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    css-box-model "^1.2.1"
+    memoize-one "^6.0.0"
+    raf-schd "^4.0.3"
+    react-redux "^8.0.2"
+    redux "^4.2.0"
+    use-memo-one "^1.1.2"
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1863,7 +1883,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hoist-non-react-statics@^3.3.0":
+"@types/hoist-non-react-statics@^3.3.0", "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
   integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
@@ -2029,6 +2049,11 @@
   integrity sha512-/xFrPIo+4zOeNGtVMbf9rUm0N+i4pDf1ynExomqtokIJmVzR3962lJ1UE+MmexMkA0cmN9oTzg5Xcbwge0Ij2Q==
   dependencies:
     source-map "^0.6.1"
+
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
+  integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
 
 "@types/webpack-sources@*":
   version "3.2.0"
@@ -3048,6 +3073,22 @@ bio-parsers@^8.3.31:
   version "8.3.31"
   resolved "https://registry.yarnpkg.com/bio-parsers/-/bio-parsers-8.3.31.tgz#909eadb4f34bf17d8c9710c6df3898410c282d4e"
   integrity sha512-qCDQcSIXU5e4OaPqSIET6cmtH1PaNJ0P3OElwDoaz+/rLw2dTHSaTMKMa3z1uY87OVuc4RmbzaQ+jzhxjFcfkQ==
+  dependencies:
+    "@gmod/gff" "^1.2.1"
+    buffer "^6.0.3"
+    bufferpack "^0.0.6"
+    color "^4.2.3"
+    fast-xml-parser "^4.0.9"
+    flatmap "0.0.3"
+    lodash "^4.17.21"
+    safe-access "^0.1.0"
+    string_decoder "^1.3.0"
+    validate.io-nonnegative-integer-array "^1.0.1"
+
+bio-parsers@^8.3.32:
+  version "8.3.32"
+  resolved "https://registry.yarnpkg.com/bio-parsers/-/bio-parsers-8.3.32.tgz#a271ae125a08f81ab3faaaa0dbcb2f4b01907412"
+  integrity sha512-ZsCdmSRgrNDTHdNrRyQebFgJJ19v2gR8BmB5LmwoSf7QMKkhGtCCLlSIFFgO2WZaCqcnsFtQuNl9m5G7sKiGbQ==
   dependencies:
     "@gmod/gff" "^1.2.1"
     buffer "^6.0.3"
@@ -4081,7 +4122,7 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
-css-box-model@^1.2.0:
+css-box-model@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/css-box-model/-/css-box-model-1.2.1.tgz#59951d3b81fd6b2074a62d49444415b0d2b4d7c1"
   integrity sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw==
@@ -8080,10 +8121,10 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-memoize-one@^5.1.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
-  integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
+memoize-one@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-6.0.0.tgz#b2591b871ed82948aee4727dc6abceeeac8c1045"
+  integrity sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw==
 
 memory-fs@^0.4.1:
   version "0.4.1"
@@ -8705,19 +8746,20 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-open-vector-editor@^18.1.16:
-  version "18.1.16"
-  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-18.1.16.tgz#b647a4a194842585d734cfa75050120b87949eec"
-  integrity sha512-uOfqyK9Lv9nUTtLRBbtY5O6E7KFzRdC8m/uyXbRFoEmj9nu3xs34CAUrkZpwYHH2xGUA0byKADGpmcVjskbiIw==
+open-vector-editor@^18.1.37:
+  version "18.1.37"
+  resolved "https://registry.yarnpkg.com/open-vector-editor/-/open-vector-editor-18.1.37.tgz#d5b7ef8b6242a2223abe3045931a440bebf94f13"
+  integrity sha512-mkQkbgDuEiU2le56jhccfzAMUQNb0Ghj3r/6hfryVoO/wG6PdBl7WNTFzHHa71wmkfcMDvAKWpMnHfEbFLWzgw==
   dependencies:
     "@blueprintjs/core" "3.52.0"
     "@blueprintjs/datetime" "3.23.19"
     "@blueprintjs/select" "3.18.11"
     "@fontsource/ubuntu-mono" "^4.5.0"
+    "@hello-pangea/dnd" "^16.0.0"
     "@risingstack/react-easy-state" "^6.3.0"
     "@teselagen/react-list" "^0.8.18"
     "@use-gesture/react" "^10.2.15"
-    bio-parsers "^8.3.31"
+    bio-parsers "^8.3.32"
     classnames "^2.3.1"
     clipboard "2.0.8"
     color "^3.1.3"
@@ -8733,7 +8775,6 @@ open-vector-editor@^18.1.16:
     pluralize "^7.0.0"
     popper.js "^1.16.1"
     prop-types "^15.8.1"
-    react-beautiful-dnd "^13.1.0"
     react-draggable "4.4.4"
     react-dropzone "^11.4.2"
     react-measure "^2.5.2"
@@ -8748,12 +8789,12 @@ open-vector-editor@^18.1.16:
     redux-thunk "2.4.1"
     reselect "^4.0.0"
     shortid "^2.2.16"
-    teselagen-react-components "30.10.4"
+    teselagen-react-components "30.10.15"
     tg-use-local-storage-state "^16.0.1"
-    use-debounce "^8.0.3"
+    use-debounce "^8.0.4"
     use-local-storage-state "^13.0.0"
     ve-range-utils "^2.6.6"
-    ve-sequence-utils "^5.1.34"
+    ve-sequence-utils "^5.1.36"
   optionalDependencies:
     cypress "^10.6.0"
 
@@ -10077,7 +10118,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-raf-schd@^4.0.2:
+raf-schd@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-4.0.3.tgz#5d6c34ef46f8b2a0e880a8fcdb743efc5bfdbc1a"
   integrity sha512-tQkJl2GRWh83ui2DiPTJz9wEiMN20syf+5oKfB03yYP7ioZcJwsIK8FjrtLwH1m7C7e+Tt2yYBlrOpdT+dyeIQ==
@@ -10142,19 +10183,6 @@ react-app-polyfill@^2.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
-
-react-beautiful-dnd@^13.1.0:
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/react-beautiful-dnd/-/react-beautiful-dnd-13.1.0.tgz#ec97c81093593526454b0de69852ae433783844d"
-  integrity sha512-aGvblPZTJowOWUNiwd6tNfEpgkX5OxmpqxHKNW/4VmvZTNTbeiq7bA3bn5T+QSF2uibXB0D1DmJsb1aC/+3cUA==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
-    css-box-model "^1.2.0"
-    memoize-one "^5.1.1"
-    raf-schd "^4.0.2"
-    react-redux "^7.2.0"
-    redux "^4.0.4"
-    use-memo-one "^1.1.1"
 
 react-color@^2.19.3:
   version "2.19.3"
@@ -10255,19 +10283,24 @@ react-is@^17.0.1, react-is@^17.0.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-is@^18.0.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
+  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
 react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-markdown@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-4.1.0.tgz#7fdf840ecbabc803f28156f7411c726b58f25a73"
-  integrity sha512-EOHsEAN+aoP8UVz7vTHx6Z63GJfhrO9KItKlfsiBtVVS9tmSWtUaBTw73+2SObrWiOiE2Cs9qUBL7ORsvVhOrA==
+react-markdown@4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-4.0.6.tgz#927d44421735cd90b7634bb221e9d7d8656e01e9"
+  integrity sha512-E1d/q+OBk5eumId42oYqVrJRB/+whrZdk+YHqUBCCNeWxqeV+Qzt+yLTsft9+4HRDj89Od7eAbUPQBYq8ZwShQ==
   dependencies:
     html-to-react "^1.3.4"
     mdast-add-list-metadata "1.0.1"
-    prop-types "^15.7.2"
+    prop-types "^15.6.1"
     remark-parse "^5.0.0"
     unified "^6.1.5"
     unist-util-visit "^1.3.0"
@@ -10296,7 +10329,7 @@ react-popper@^1.3.7:
     typed-styles "^0.0.7"
     warning "^4.0.2"
 
-react-redux@^7.2.0, react-redux@^7.2.6:
+react-redux@^7.2.6:
   version "7.2.8"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.8.tgz#a894068315e65de5b1b68899f9c6ee0923dd28de"
   integrity sha512-6+uDjhs3PSIclqoCk0kd6iX74gzrGc3W5zcAjbrFgEdIjRSQObdIwfx80unTkVUYvbQ95Y8Av3OvFHq1w5EOUw==
@@ -10307,6 +10340,18 @@ react-redux@^7.2.0, react-redux@^7.2.6:
     loose-envify "^1.4.0"
     prop-types "^15.7.2"
     react-is "^17.0.2"
+
+react-redux@^8.0.2:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-8.0.4.tgz#80c31dffa8af9526967c4267022ae1525ff0e36a"
+  integrity sha512-yMfQ7mX6bWuicz2fids6cR1YT59VTuT8MKyyE310wJQlINKENCeT1UcPdEiX6znI5tF8zXyJ/VYvDgeGuaaNwQ==
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    hoist-non-react-statics "^3.3.2"
+    react-is "^18.0.0"
+    use-sync-external-store "^1.0.0"
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -10582,7 +10627,7 @@ redux@^3.3.1:
     loose-envify "^1.1.0"
     symbol-observable "^1.0.3"
 
-redux@^4.0.0, redux@^4.0.4:
+redux@^4.0.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
   integrity sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw==
@@ -11955,10 +12000,10 @@ terser@^5.3.4:
     source-map "~0.7.2"
     source-map-support "~0.5.20"
 
-teselagen-react-components@30.10.4:
-  version "30.10.4"
-  resolved "https://registry.yarnpkg.com/teselagen-react-components/-/teselagen-react-components-30.10.4.tgz#6a8ccec4b9031a84ab3bbca17ad0fbf441fc6e2d"
-  integrity sha512-s2xqyZjhvf+EIZhwR5JjAW2MKRF1qlS9iDbYk0ggCn2dIfzDJ7dn+fMhZ0x0SOauwQyei03/ES1LAhI65/XAVQ==
+teselagen-react-components@30.10.15:
+  version "30.10.15"
+  resolved "https://registry.yarnpkg.com/teselagen-react-components/-/teselagen-react-components-30.10.15.tgz#b83f595298e38f7876ee46ddfc7f6480e46cc33a"
+  integrity sha512-DF2twESjFGWH1KiPrH/xy0g22Pra64kPJ9E6AvV3VMx0oLkJGa9kMDcN3f4GgMo8OPs+z2FW9f7OJChrgmwfpQ==
   dependencies:
     "@blueprintjs/core" "3.52.0"
     "@blueprintjs/datetime" "3.23.19"
@@ -11979,7 +12024,7 @@ teselagen-react-components@30.10.4:
     qs "^6.9.6"
     react-color "^2.19.3"
     react-dropzone "^11.4.2"
-    react-markdown "4.1.0"
+    react-markdown "4.0.6"
     react-rnd "^10.2.4"
     react-router-dom "^4.3.1"
     react-sortable-hoc "^0.6.8"
@@ -12557,10 +12602,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-debounce@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-8.0.3.tgz#2b4d7d7307a9397acb6520b7a1dea14c2c3d108c"
-  integrity sha512-BV7xuVy4LS0HtzHb23sDwAjfNjdBWlc4oyjJLcdCoVAjPv1+hroZYsCXX4VfRJT+8sLaqCftBOO8l7CMQtn9Gw==
+use-debounce@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/use-debounce/-/use-debounce-8.0.4.tgz#27e93b2f010bd0b8ad06e9fc7de891d9ee5d6b8e"
+  integrity sha512-fGqsYQzl8kLHF2QpQSgIwgOgJmnh6j5L6SIzQiHdLfwp3q1egUL3btq5Bg2SJysH6A0ILLgT2IqXZKoNJr0nFw==
 
 use-deep-compare-effect@^1.6.1:
   version "1.8.1"
@@ -12575,10 +12620,15 @@ use-local-storage-state@^13.0.0:
   resolved "https://registry.yarnpkg.com/use-local-storage-state/-/use-local-storage-state-13.0.0.tgz#d74a446b96b023495fa0591611f7a22671ac74e3"
   integrity sha512-dn7wltrMcYomTAEPyBAnPn3oWmfCOKFO0+oU6L94ovVFbP/O9FndAyoL0gmQ3qmZ4FFd5MuASEQZk46ZeyfRww==
 
-use-memo-one@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/use-memo-one/-/use-memo-one-1.1.2.tgz#0c8203a329f76e040047a35a1197defe342fab20"
-  integrity sha512-u2qFKtxLsia/r8qG0ZKkbytbztzRb317XCkT7yP8wxL0tZ/CzK2G+WWie5vWvpyeP7+YoPIwbJoIHJ4Ba4k0oQ==
+use-memo-one@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/use-memo-one/-/use-memo-one-1.1.3.tgz#2fd2e43a2169eabc7496960ace8c79efef975e99"
+  integrity sha512-g66/K7ZQGYrI6dy8GLpVcMsBp4s17xNkYJVSMvTEevGy3nDxHOfE6z8BVE22+5G5x7t3+bhzrlTDB7ObrEE0cQ==
+
+use-sync-external-store@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 use@^3.1.0:
   version "3.1.1"
@@ -12720,10 +12770,10 @@ ve-range-utils@^2.6.6:
   dependencies:
     lodash "^4.17.4"
 
-ve-sequence-utils@^5.1.34:
-  version "5.1.34"
-  resolved "https://registry.yarnpkg.com/ve-sequence-utils/-/ve-sequence-utils-5.1.34.tgz#a3c3a36c9fc2b7bf131e4a573c8180f63d70f314"
-  integrity sha512-yKeuSy1lGO+fHwHgqt4dJ6buOkaml/iA0KOLDX9Bkd5pgB4QKnS9R25HjbSFBKfoBdNS1ZopA7D3gqyv3EGBIw==
+ve-sequence-utils@^5.1.36:
+  version "5.1.38"
+  resolved "https://registry.yarnpkg.com/ve-sequence-utils/-/ve-sequence-utils-5.1.38.tgz#5e508648e44e78733c6f7f315781c7ce368ae75d"
+  integrity sha512-VBJFWekKkpdDksnl8BxWEPLS0QTr7LbxirLor0olswB1xAP47Vifwj56B3z+59fd4ur1zCaR7koUehQF79l6bg==
   dependencies:
     bson-objectid "^1.1.1"
     escape-string-regexp "^1.0.5"
