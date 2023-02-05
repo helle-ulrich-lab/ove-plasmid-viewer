@@ -5,7 +5,7 @@ import { anyToJson } from 'bio-parsers';
 
 import "./App.css";
 
-async function convertPlasmiMapToOveJson(fileName) {
+async function convertPlasmiMapToOveJson(fileName, fileFormat) {
   let data = await fetch(
     new Request(fileName, {
       //probably don't need this header.. fetch should just work
@@ -13,7 +13,6 @@ async function convertPlasmiMapToOveJson(fileName) {
     })
   ) 
     .then((response) => {
-      let fileFormat = fileName.split('.').pop().toLowerCase();
       if (fileFormat === 'gbk') return response.text();
       else if (fileFormat === 'dna') return response.blob();
     }
@@ -30,12 +29,17 @@ function App() {
   const params = new URLSearchParams(search);
   const fileName = params.get("file_name");
   const title = params.get("title");
+  const showOligos = params.get("show_oligos") ? true : false;
+  const fileFormat = params.get("file_format");
+
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     //useEffect doesn't like top level async functions so we define one inline and immediately invoke it
     (async () => {
       // Get plasmid as OVE JSON
-      const seqData = await convertPlasmiMapToOveJson(fileName);
+      const seqData = await convertPlasmiMapToOveJson(fileName, fileFormat);
+      setLoading(false);
       seqData.name = title;
       const plasmid_length = seqData.size;
 
@@ -58,7 +62,8 @@ function App() {
         annotationVisibility: {
           features: true,
           cutsites: false,
-          primers: false
+          primers: showOligos,
+          translations: !showOligos,
         }
       });
       
@@ -72,12 +77,13 @@ function App() {
     readOnly: true,
     ToolBarProps: {
       toolList: [
+        "downloadTool",
         "cutsiteTool",
         "featureTool",
         "oligoTool",
         "orfTool",
-        "findTool",
         "visibilityTool",
+        "findTool",
       ]
     },
     PropertiesProps: {
@@ -96,10 +102,12 @@ function App() {
     },
   };
 
-  return (
+  return !loading ? (
     <div>
       <Editor {...editorProps} />
     </div>
+  ) : (
+    <div></div>
   );
 }
 
