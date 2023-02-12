@@ -41,20 +41,12 @@ function App() {
       const seqData = await convertPlasmiMapToOveJson(fileName, fileFormat);
       setLoading(false);
       seqData.name = title;
-      const plasmid_length = seqData.size;
+      const plasmidLength = seqData.size;
 
       // Remove features that do not need to be shown, ever!
-      for (let i = 0; i < seqData.features.length; i++) {
-        const feat = seqData.features[i];
-        const feat_name = feat.name.toLowerCase();
-        if (
-          (feat_name === "synthetic dna construct" ||
-            feat_name === "recombinant plasmid") &&
-          plasmid_length === feat.end - feat.start + 1
-        ) {
-          delete seqData.features[i];
-        }
-      }
+      const featNameExclude = ["synthetic dna construct", "recombinant plasmid", "source"];
+      seqData.features = seqData.features.filter(feat =>
+          !(featNameExclude.includes(feat.name.toLowerCase()) && plasmidLength === feat.end - feat.start + 1));
 
       updateEditor(store, "DemoEditor", {
         sequenceData: seqData,
