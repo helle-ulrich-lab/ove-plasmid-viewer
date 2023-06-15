@@ -7,11 +7,17 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "bio-parsers": "^9.0.1",
-    "open-vector-editor": "^18.1.48",
+    "bio-parsers": "^9.3.2",
+    "open-vector-editor": "^18.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "ve-range-utils": "^2.6.6",
+    "ve-sequence-utils": "^5.2.16"
+  },
+  "peerDependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
