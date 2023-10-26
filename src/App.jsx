@@ -1,7 +1,7 @@
 import React from "react";
-import { Editor, updateEditor } from "open-vector-editor";
+import { Editor, updateEditor } from "@teselagen/ove";
 import store from "./store";
-import { anyToJson } from 'bio-parsers';
+import { anyToJson } from '@teselagen/bio-parsers';
 
 import "./App.css";
 
